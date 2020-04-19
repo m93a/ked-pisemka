@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.2.26)  19 APR 2020 15:46
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.2.26)  19 APR 2020 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -464,16 +464,15 @@ File: uloha3_zadani.pdf Graphic file (type pdf)
 <use uloha3_zadani.pdf>
 File: uloha3_detail.pdf Graphic file (type pdf)
 <use uloha3_detail.pdf>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 284.
  [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 283.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 283.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 284.
  (./pisemka.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 283.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 283.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 284.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 284.
 Package rerunfilecheck Info: File `pisemka.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 283.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 284.
  ) 
 Here is how much of TeX's memory you used:
  11065 strings out of 494328
@@ -482,6 +481,6 @@ Here is how much of TeX's memory you used:
  14859 multiletter control sequences out of 15000+600000
  49954 words of font info for 73 fonts, out of 8000000 for 9000
  360 hyphenation exceptions out of 8191
- 28i,15n,27p,545b,356s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,15n,27p,545b,347s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on pisemka.pdf (4 pages).
+Output written on pisemka.pdf (3 pages).

@@ -256,10 +256,11 @@ Elektrody umístíme tak, že zakrývají celou podstavu, tok elektrické intenz
 Tato vlastnost platí, pokud jsou siločáry vyobrazeny v trojrozměrném prostoru. Vyobrazíme-li pouze řez úlohou, místo siločar protínajících $S$ ve skutečnosti zobrazujeme siločáry protínající lineární element $\d{S}$. V takovém případě by počet siločar odpovídal $\d{\Phi}$ a bylo by třeba ještě zintegrovat přes plochu.
 U grafů axiálně symetrických řezů je ovšem zvykem přenásobit zobrazovanou veličinu faktorem $\pi R$, což efektivně odpovídá zintegrování přes půlkružnici kolem osy. V takovém případě opět platí zmíněný přepočet $N = \floor{k\Phi}$. Budeme předpokládat, že to je i náš případ. Poměr náboje $Q_h$ indukovaného na hroní elektrodě a náboje $Q_s$ indukovaného na spodní elektrodě vypočítáme jednoduše jako poměr počtu siločar protínajících horní a spodní podstavu.
 
-\begin{figure}[h!]
+\begin{wrapfigure}{r}{7cm}
     \centering
-    \includegraphics[width=0.6\textwidth]{uloha3_detail.pdf}
-\end{figure}
+    \includegraphics[width=5cm]{uloha3_detail.pdf}
+    \caption{Detail siločar kolem válce. Horní podstavu protíná $74$ siločar, spodní $4$.}
+\end{wrapfigure}
 
 Platí:
 \begin{align*}
@@ -277,7 +278,7 @@ Na spodní podstavě válce končí 4 siločáry, celkový indukovaný náboj je
     \left|Q_s\right|
     = \frac{\Phi}{\varepsilon_0}
     \approx \frac{N_s}{k\varepsilon_0}
-    = \frac{4 a^2}{10 \varepsilon_0} \; \norm{E}
+    = \frac{4 a^2}{10 \varepsilon_0} \; \norm{E}.
 \end{align*}
 
 \end{document}
