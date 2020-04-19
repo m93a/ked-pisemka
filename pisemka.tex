@@ -9,7 +9,6 @@
 \usepackage{lmodern}
 \usepackage{hyperref}
 \usepackage{setspace}
-\usepackage{csvsimple}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -19,8 +18,7 @@
 \usepackage{bm}
 \delimitershortfall=-1pt
 
-\usepackage{gnuplottex}
-\usepackage{epstopdf}
+\usepackage{wrapfig}
 
 % no page break
 \newenvironment{absolutelynopagebreak}
@@ -223,10 +221,55 @@ Otočené pole $\vec{U}'$ je potom:
 \end{gather*}
 Musí platit rovnost $\vec{U} = \vec{U}'$. Porovnáním členů (konkrétně $xy^2\vec{\const{e}}_\const{x}$) získáme nutnou podmínku:
 \begin{align*}
+    -3\; xy^2 \; \vec{\const{e}}_\const{x}
+    = (3+4a) \; xy^2 \; \vec{\const{e}}_\const{x}
+    \;\;\; \implies \;\;\;
     a = - \, \nicefrac{3}{2}.
 \end{align*}
 
 
+\pagebreak
+\begin{wrapfigure}{r}{7cm}
+    \centering
+    \includegraphics[width=5cm]{uloha3_zadani.pdf}
+    \caption{Graf siločar ve svislém řezu procházejícím osou symetrie.}
+\end{wrapfigure}
 
+\section*{Úkol 3}
+
+\subsection*{Zadání}
+Do homogenního pole se vzdáleností siločar $a$ byl umístěn uzeměný válec o výšce $h=2a$ a poloměru $R=2a$ ve vzdálenosti $H=4a$ od země. Kolikrát nižší by byl náboj indukovaný na elektrodě umístěné na spodní podstavě oproti elektrodě umístěné na horní podstavě? A v jakém vztahu je s intenzitou původního homogenního pole?
+
+\subsection*{Řešení}
+Při řešení této úlohy nám bude užitečná veličina $\Phi$ – tok elektrické intenzity $\vec{E}$ plochou $S$ – definovaná jako:
+\begin{align*}
+    \Phi = \iint_S \vec{E} \cdot \d{\vec{S}}
+\end{align*}
+Víme, že náboj indukovaný na tělese je přímo úměrný toku elektrické intenzity jeho povrchem:
+\begin{align*}
+    Q = \frac{\Phi}{\varepsilon_0}
+\end{align*}
+Elektrody umístíme tak, že zakrývají celou podstavu, tok elektrické intenzity skrz povrch elektrody tak bude rovný toku skrz samotnou podstavu. Víme, že siločáry jsou tradičně značeny tak, aby počet siločar $N$ protínajících nějakou plochu $S$ byl přímo úměrný toku elektrické intenzity přes tuto plochu:
+\begin{align*}
+    N = \floor{k\Phi}, \;\;\; k = \const{konst.}
+\end{align*}
+Tato vlastnost platí, pokud jsou siločáry vyobrazeny v trojrozměrném prostoru. Vyobrazíme-li pouze řez úlohou, místo siločar protínajících $S$ ve skutečnosti zobrazujeme siločáry protínající lineární element $\d{S}$. V takovém případě by počet siločar odpovídal $\d{\Phi}$ a bylo by třeba ještě zintegrovat přes plochu.
+U grafů axiálně symetrických řezů je ovšem zvykem přenásobit zobrazovanou veličinu faktorem $\pi R$, což efektivně odpovídá zintegrování přes půlkružnici kolem osy. V takovém případě opět platí zmíněný přepočet $N = \floor{k\Phi}$. Budeme předpokládat, že to je i náš případ. Poměr náboje $Q_h$ indukovaného na hroní elektrodě a náboje $Q_s$ indukovaného na spodní elektrodě vypočítáme jednoduše jako poměr počtu siločar protínajících horní a spodní podstavu.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.6\textwidth]{uloha3_detail.pdf}
+\end{figure}
+
+Platí:
+\begin{align*}
+    \frac{Q_h}{Q_s} &= \frac{\Phi_h}{\varepsilon_0} \, \frac{\varepsilon_0}{\Phi_s} \approx \frac{N_h}{N_s} = \frac{74}{4} = 18.5
+\end{align*}
+Citlivost na spodní elektrodě je tedy cca $18.5$-krát nižší.
+
+Nyní stačí vypočítat konstantu úměrnosti $k$ mezi počtem siločar $N$ a tokem intenzity $\Phi$. Víme, že před umístěním válce do homogenního pole $\vec{E}$ byly od sebe siločáry vzdáleny $a$, to znamená že na plochu $S=a^2$ připadla právě jedna siločára, tedy:
+\begin{align*}
+    1 = N = k\Phi = k\int_{S=a^2} \vec{E} \cdot \d{\vec{S}} = k a^2 \norm{E}
+\end{align*}
 
 \end{document}
